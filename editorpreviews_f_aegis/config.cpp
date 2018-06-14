@@ -1,0 +1,24 @@
+class CfgPatches
+{
+	class A3_EditorPreviews_F_Aegis
+	{
+		author="$STR_A3_Night515";
+		name="Arma 3 Aegis - Editor preview pictures";
+		url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
+		requiredAddons[]=
+		{
+			"A3_EditorPreviews_F"
+		};
+		requiredVersion=0.1;
+		units[]={};
+		weapons[]={};
+	};
+};
+class CfgVehicles
+{
+};
+class cfgMods
+{
+	author="Night515";
+	timepacked="1525614272";
+};

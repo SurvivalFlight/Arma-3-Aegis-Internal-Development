@@ -1,0 +1,123 @@
+class CfgPatches
+{
+	class A3_Air_F_Aegis_VTOL_01
+	{
+		addonRootClass="A3_Air_F_Aegis";
+		requiredAddons[]=
+		{
+			"A3_Air_F_Exp_VTOL_01"
+		};
+		requiredVersion=0.1;
+		units[]=
+		{
+			"B_VTOL_01_armed_F",
+			"B_VTOL_01_infantry_F",
+			"B_VTOL_01_vehicle_F"
+		};
+		weapons[]={};
+	};
+};
+class CfgVehicles
+{
+	class VTOL_01_infantry_base_F;
+	class B_VTOL_01_infantry_F: VTOL_01_infantry_base_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\B_VTOL_01_infantry_F.jpg";
+		_generalMacro="B_VTOL_01_infantry_F";
+		scope=2;
+		scopeCurator=2;
+		displayName="$STR_A3_CfgVehicles_VTOL_01_infantry_base_F0";
+		DLC="Aegis";
+		side=1;
+		faction="BLU_F";
+		crew="B_Pilot_F";
+		typicalCargo[]=
+		{
+			"B_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Blue",
+			0,
+			"Olive",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa"
+		};
+	};
+	class VTOL_01_vehicle_base_F;
+	class B_VTOL_01_vehicle_F: VTOL_01_vehicle_base_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\B_VTOL_01_vehicle_F.jpg";
+		_generalMacro="B_VTOL_01_vehicle_F";
+		scope=2;
+		scopeCurator=2;
+		displayName="$STR_A3_CfgVehicles_VTOL_01_vehicle_base_F0";
+		DLC="Aegis";
+		side=1;
+		faction="BLU_F";
+		crew="B_Pilot_F";
+		typicalCargo[]=
+		{
+			"B_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Blue",
+			0,
+			"Olive",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa"
+		};
+	};
+	class VTOL_01_armed_base_F;
+	class B_VTOL_01_armed_F: VTOL_01_armed_base_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\B_VTOL_01_armed_F.jpg";
+		_generalMacro="B_VTOL_01_armed_F";
+		scope=2;
+		scopeCurator=2;
+		displayName="$STR_A3_CfgVehicles_VTOL_01_armed_base_F0";
+		DLC="Aegis";
+		side=1;
+		faction="BLU_F";
+		crew="B_Pilot_F";
+		typicalCargo[]=
+		{
+			"B_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Blue",
+			0,
+			"Olive",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa",
+			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa"
+		};
+	};
+};
+class cfgMods
+{
+	author="Night515";
+	timepacked="1527942476";
+};

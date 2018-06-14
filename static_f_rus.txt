@@ -1,0 +1,1 @@
+prefix=A3\static_f_rus\

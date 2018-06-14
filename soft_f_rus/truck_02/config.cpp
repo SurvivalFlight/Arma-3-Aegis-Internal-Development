@@ -1,0 +1,227 @@
+class CfgPatches
+{
+	class A3_Soft_F_Rus_Truck_02
+	{
+		addonRootClass="A3_Soft_F_Rus";
+		requiredAddons[]=
+		{
+			"A3_Soft_F_Aegis_Truck_02"
+		};
+		requiredVersion=0.1;
+		units[]=
+		{
+			"I_RU_Truck_02_ammo_F",
+			"I_RU_Truck_02_covered_F",
+			"I_RU_Truck_02_fuel_F",
+			"I_RU_Truck_02_medical_F",
+			"I_RU_Truck_02_MRL_F",
+			"I_RU_Truck_02_repair_F",
+			"I_RU_Truck_02_transport_F"
+		};
+		weapons[]={};
+	};
+};
+class CfgVehicles
+{
+	class I_Truck_02_transport_F;
+	class I_RU_Truck_02_transport_F: I_Truck_02_transport_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_transport_F.jpg";
+		_generalMacro="I_RU_Truck_02_transport_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kuz_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa"
+		};
+	};
+	class I_Truck_02_covered_F;
+	class I_RU_Truck_02_covered_F: I_Truck_02_covered_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_covered_F.jpg";
+		_generalMacro="I_RU_Truck_02_covered_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kuz_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa"
+		};
+	};
+	class I_Truck_02_box_F;
+	class I_RU_Truck_02_box_F: I_Truck_02_box_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_box_F.jpg";
+		_generalMacro="I_RU_Truck_02_box_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_repair_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa"
+		};
+	};
+	class I_Truck_02_medical_F;
+	class I_RU_Truck_02_medical_F: I_Truck_02_medical_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_medical_F.jpg";
+		_generalMacro="I_RU_Truck_02_medical_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kuz_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa"
+		};
+	};
+	class I_Truck_02_Ammo_F;
+	class I_RU_Truck_02_Ammo_F: I_Truck_02_Ammo_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_Ammo_F.jpg";
+		_generalMacro="I_RU_Truck_02_Ammo_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_repair_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa"
+		};
+	};
+	class I_Truck_02_fuel_F;
+	class I_RU_Truck_02_fuel_F: I_Truck_02_fuel_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_fuel_F.jpg";
+		_generalMacro="I_RU_Truck_02_fuel_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_fuel_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa"
+		};
+	};
+	class I_Truck_02_MRL_F;
+	class I_RU_Truck_02_MRL_F: I_Truck_02_MRL_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_RU_Truck_02_MRL_F.jpg";
+		_generalMacro="I_RU_Truck_02_MRL_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Rus";
+		side=2;
+		faction="IND_RU_F";
+		crew="I_RU_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_RU_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Rus",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_kab_rus_CO.paa",
+			"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+			"\A3\Soft_F_Rus\Truck_02\Data\Truck_02_MRL_rus_CO.paa"
+		};
+	};
+};
+class cfgMods
+{
+	author="Night515";
+	timepacked="1527283818";
+};

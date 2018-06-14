@@ -1,0 +1,277 @@
+class CfgPatches
+{
+	class A3_Data_F_Rus
+	{
+		author="$STR_A3_Night515";
+		name="Arma 3 Russian Army - Main Configuration";
+		url="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
+		requiredAddons[]=
+		{
+			"A3_Data_F_Aegis",
+			"A3_Data_F_Aegis_Loadorder"
+		};
+		requiredVersion=0.1;
+		units[]={};
+		weapons[]={};
+	};
+};
+class CfgAddons
+{
+	class PreloadAddons
+	{
+		class A3_Rus
+		{
+			list[]=
+			{
+				"A3_Air_F_Rus",
+				"A3_Air_F_Rus_Heli_Attack_02",
+				"A3_Air_F_Rus_Heli_Light_02",
+				"A3_Air_F_Rus_Heli_Transport_04",
+				"A3_Air_F_Rus_Plane_CAS_02",
+				"A3_Air_F_Rus_Plane_Fighter_02",
+				"A3_Air_F_Rus_UAV_01",
+				"A3_Air_F_Rus_UAV_02",
+				"A3_Air_F_Rus_UAV_06",
+				"A3_Armor_F_Rus",
+				"A3_Armor_F_Rus_APC_Tracked_02",
+				"A3_Armor_F_Rus_APC_Wheeled_02",
+				"A3_Armor_F_Rus_MBT_02",
+				"A3_Armor_F_Rus_MBT_04",
+				"A3_Boat_F_Rus",
+				"A3_Boat_F_Rus_Boat_Armed_01",
+				"A3_Boat_F_Rus_Boat_Transport_01",
+				"A3_Boat_F_Rus_Boat_Transport_02",
+				"A3_Boat_F_Rus_SDV_01",
+				"A3_Characters_F_Rus",
+				"A3_Characters_F_Rus_Headgear",
+				"A3_Characters_F_Rus_Uniforms",
+				"A3_Characters_F_Rus_Vests",
+				"A3_Data_F_Rus",
+				"A3_Data_F_Rus_Loadorder",
+				"A3_Dubbing_Radio_F_Rus",
+				"A3_EditorPreviews_F_Rus",
+				"A3_Language_F_Rus",
+				"A3_Music_F_Rus",
+				"A3_Soft_F_Rus",
+				"A3_Soft_F_Rus_LSV_02",
+				"A3_Soft_F_Rus_MRAP_02",
+				"A3_Soft_F_Rus_Quadbike_01",
+				"A3_Soft_F_Rus_Truck_02",
+				"A3_Soft_F_Rus_Truck_03",
+				"A3_Soft_F_Rus_UGV_01",
+				"A3_Sounds_F_Rus",
+				"A3_Static_F_Rus",
+				"A3_Static_F_Rus_AA_01",
+				"A3_Static_F_Rus_AAA_System_01",
+				"A3_Static_F_Rus_AT_01",
+				"A3_Static_F_Rus_Designator_01",
+				"A3_Static_F_Rus_GMG_01",
+				"A3_Static_F_Rus_HMG_01",
+				"A3_Static_F_Rus_Mortar_01",
+				"A3_Static_F_Rus_SAM_System_01",
+				"A3_Static_F_Rus_SAM_System_02",
+				"A3_Structures_F_Rus",
+				"A3_Structures_F_Rus_Humanitarian",
+				"A3_Structures_F_Rus_Humanitarian_Camps",
+				"A3_Structures_F_Rus_Military",
+				"A3_Structures_F_Rus_Military_Flags",
+				"A3_Structures_F_Rus_Signs",
+				"A3_Structures_F_Rus_Signs_Warnings",
+				"A3_Supplies_F_Rus",
+				"A3_Supplies_F_Rus_Ammoboxes",
+				"A3_Supplies_F_Rus_Bags",
+				"A3_Supplies_F_Rus_CargoNets",
+				"A3_UI_F_Rus",
+				"A3_Weapons_F_Rus",
+				"A3_Weapons_F_Rus_Acc",
+				"A3_Weapons_F_Rus_GrenadeLaunchers_RG6",
+				"A3_Weapons_F_Rus_Launchers_Titan",
+				"A3_Weapons_F_Rus_LongRangeRifles_DMR_01",
+				"A3_Weapons_F_Rus_LongRangeRifles_DMR_04",
+				"A3_Weapons_F_Rus_LongRangeRifles_DMR_05",
+				"A3_Weapons_F_Rus_Machineguns_MMG_03",
+				"A3_Weapons_F_Rus_Rifles_AK105",
+				"A3_Weapons_F_Rus_Rifles_AK107",
+				"A3_Weapons_F_Rus_Rifles_AK12",
+				"A3_Weapons_F_Rus_Rifles_RPK",
+				"A3_Weapons_F_Rus_Shotguns_SK12",
+				"A3_Weapons_F_Rus_SMGs_SMG_06"
+			};
+		};
+	};
+};
+class CfgFactionClasses
+{
+	class IND_RU_F
+	{
+		displayName="Russia";
+		priority=5;
+		side=2;
+		icon="\A3\Data_F_Rus\FactionIcons\icon_RUS_CA.paa";
+		flag="\A3\Data_F_Rus\Flags\Flag_Russia_CO.paa";
+	};
+};
+class CfgVehicleClasses
+{
+};
+class CfgMods
+{
+	class Mod_Base;
+	class Rus: Mod_Base
+	{
+		picture="\A3\Data_F_Rus\Logos\arma3_Rus_icon_CA.paa";
+		logo="\A3\Data_F_Rus\Logos\arma3_Rus_logo_CA.paa";
+		logoOver="\A3\Data_F_Rus\Logos\arma3_Rus_logoOver_CA.paa";
+		logoSmall="\A3\Data_F_Rus\Logos\arma3_Rus_logo_small_CA.paa";
+		tooltip="$STR_A3_cfgMods_Rus_name0";
+		tooltipOwned="$STR_A3_cfgMods_Rus_name0";
+		action="https://forums.bistudio.com/forums/topic/205858-arma-3-aegis-alpha";
+		fieldManualTopicAndHint[]={};
+		dlcColor[]={0.57999998,0.81999999,0.88999999,1};
+		overview="$STR_A3_cfgMods_Rus_overview0";
+		logoTitle="\A3\Data_F_Rus\Logos\arma3_Rus_logoTitle_CA.paa";
+		hideName=1;
+		hidePicture=0;
+		name="$STR_A3_cfgMods_Rus_name0";
+		author="$STR_A3_Night515";
+		artwork="\A3\Data_F_Rus\Logos\arma3_Rus_artwork.jpg";
+		overviewPicture="\A3\Data_F_Rus\Images\Rus_overviewPicture_CO.paa";
+		dir="Rus";
+		class Assets
+		{
+		};
+		class Features
+		{
+		};
+	};
+	author="Night515";
+	timepacked="1527346175";
+};
+class CfgEditorCategories
+{
+};
+class CfgEditorSubcategories
+{
+};
+class CfgWorlds
+{
+	class GenericNames
+	{
+		class RusnMen
+		{
+			class FirstNames
+			{
+				ivan="Ivan";
+				mikhail="Mikhail";
+				vasili="Vasili";
+				boris="Boris";
+				pavel="Pavel";
+				vladimir="Vladimir";
+				oleg="Oleg";
+				daniil="Daniil";
+				fedor="Fedor";
+				kiril="Kiril";
+				pyotr="Pyotr";
+				filip="Filip";
+				fyodor="Fyodor";
+				andrey="Andrey";
+				igor="Igor";
+				aleksander="Aleksander";
+				lev="Lev";
+				dimitri="Dimitri";
+				viktor="Viktor";
+				vasil="Vasil";
+				ruslan="Ruslan";
+				vadim="Vadim";
+				stepan="Stepan";
+				roman="Roman";
+				nikolay="Nikolay";
+				yuri="Yuri";
+				aleksei="Aleksei";
+				maksim="Maksim";
+				valery="Valery";
+				vyacheslav="Vyacheslav";
+				egor="Egor";
+				vitaly="Vitaly";
+				nikita="Nikita";
+				konstantin="Konstantin";
+				timofey="Timofey";
+				valentin="Valentin";
+				leonid="Leonid";
+				ilya="Ilya";
+				grigoriy="Grigoriy";
+				abram="Abram";
+				alyosha="Alyosha";
+				arkadiy="Arkadiy";
+				german="German";
+				kuzma="Kuzma";
+				semyon="Semyon";
+				yevgeniy="Yevgeniy";
+			};
+			class LastNames
+			{
+				produnov="Produnov";
+				zubov="Zubov";
+				blagonravov="Blagonravov";
+				davidov="Davidov";
+				gusakov="Gusakov";
+				nikolayev="Nikolayev";
+				ivanov="Ivanov";
+				maksimov="Maksimov";
+				fisenko="Fisenko";
+				shcherbakov="Shcherbakov";
+				zverev="Zverev";
+				zykov="Zykov";
+				doronin="Doronin";
+				turchinsky="Turchinsky";
+				malyukov="Malyukov";
+				rogozhkin="Rogozhkin";
+				bychkov="Bychkov";
+				zhegalov="Zhegalov";
+				soloveychik="Soloveychik";
+				strugackiy="Strugackiy";
+				bulgakov="Bulgakov";
+				tolstoy="Tolstoy";
+				pushkin="Pushkin";
+				dobryakov="Dobryakov";
+				timoshenko="Timoshenko";
+				alekseev="Alekseev";
+				zhitkov="Zhitkov";
+				potapenko="Potapenko";
+				yefremov="Yefremov";
+				krasko="Krasko";
+				pashinin="Pashinin";
+				yeltsin="Yeltsin";
+				medvedev="Medvedev";
+				putin="Putin";
+				smirnov="Smirnov";
+				kuznetsov="Kuznetsov";
+				vasilyev="Vasilyev";
+				petrov="Petrov";
+				golovko="Golovko";
+				chapayev="Chapayev";
+				mamayev="Mamayev";
+				baranov="Baranov";
+				beregovoi="Beregovoi";
+				derevenko="Derevenko";
+				glebov="Glebov";
+				gorbunov="Gorbunov";
+				pecharov="Pecharov";
+				kirygin="Kirygin";
+				lermontov="Lermontov";
+				litvinov="Litvinov";
+				maryshkin="Naryshkin";
+				morozov="Morozov";
+				molotov="Molotov";
+				popov="Popov";
+				privalov="Privalov";
+				titov="Titov";
+				sudakov="Sudakov";
+				kamenev="Kamenev";
+				yakushkin="Yakushkin";
+				yagudin="Yagudin";
+				guba="Guba";
+			};
+		};
+	};
+};

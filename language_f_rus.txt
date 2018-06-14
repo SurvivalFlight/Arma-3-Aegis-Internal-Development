@@ -1,0 +1,1 @@
+prefix=A3\language_f_rus\

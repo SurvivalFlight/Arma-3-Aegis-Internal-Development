@@ -1,0 +1,122 @@
+class CfgPatches
+{
+	class A3_Soft_F_Aegis_Van_01
+	{
+		addonRootClass="A3_Soft_F_Aegis";
+		requiredAddons[]=
+		{
+			"A3_Soft_F_Exp_Van_01"
+		};
+		requiredVersion=0.1;
+		units[]=
+		{
+			"I_C_Van_01_fuel_F"
+		};
+		weapons[]={};
+	};
+};
+class CfgVehicles
+{
+	class Van_01_base_F;
+	class Van_01_fuel_base_F: Van_01_base_F
+	{
+		class TextureSources
+		{
+			class Brown
+			{
+				displayName="$STR_A3_TEXTURESOURCES_BROWN0";
+				author="$STR_A3_Night515";
+				textures[]=
+				{
+					"\A3\Soft_F_Exp\Van_01\Data\Van_01_ext_brn_CO.paa",
+					"\A3\Soft_F_Gamma\Van_01\Data\Van_01_tank_CO.paa",
+					"\A3\Soft_F_Exp\Van_01\Data\Van_01_int_base_2_CO.paa"
+				};
+				materials[]=
+				{
+					"\A3\Soft_F_Exp\Van_01\Data\Van_01_ext.rvmat",
+					"\A3\Soft_F_Gamma\Van_01\Data\Van_01_tank.rvmat",
+					"\A3\Soft_F_Gamma\Van_01\Data\Van_01_int_base.rvmat"
+				};
+				factions[]=
+				{
+					"IND_C_F"
+				};
+			};
+			class Olive
+			{
+				displayName="$STR_A3_TEXTURESOURCES_OLIVE0";
+				author="$STR_A3_Night515";
+				textures[]=
+				{
+					"\A3\Soft_F_Exp\Van_01\Data\Van_01_ext_oli_CO.paa",
+					"\A3\Soft_F_Gamma\Van_01\Data\Van_01_tank_CO.paa",
+					"\A3\Soft_F_Exp\Van_01\Data\Van_01_int_base_2_CO.paa"
+				};
+				materials[]=
+				{
+					"\A3\Soft_F_Exp\Van_01\Data\Van_01_ext.rvmat",
+					"\A3\Soft_F_Gamma\Van_01\Data\Van_01_tank.rvmat",
+					"\A3\Soft_F_Gamma\Van_01\Data\Van_01_int_base.rvmat"
+				};
+				factions[]=
+				{
+					"IND_C_F"
+				};
+			};
+		};
+	};
+	class I_C_Van_01_fuel_F: Van_01_fuel_base_F
+	{
+		author="$STR_A3_Night515";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_C_Van_01_fuel_F.jpg";
+		_generalMacro="I_C_Van_01_fuel_F";
+		scope=2;
+		displayName="$STR_A3_CfgVehicles_C_van_01_fuel0";
+		model="\A3\Soft_F_Gamma\Van_01\Van_01_fuel_F.p3d";
+		DLC="Aegis";
+		icon="\A3\Soft_F_Gamma\Van_01\Data\UI\map_Van_01_cistern_CA.paa";
+		picture="\A3\Soft_F_Gamma\Van_01\Data\UI\portrait_Van_01_cistern_CA.paa";
+		transportFuel=1000000000000;
+		secondaryExplosion=10000;
+		fuelExplosionPower=1;
+		explosionEffect="SupplyExplosion";
+		side=2;
+		faction="IND_C_F";
+		crew="I_C_Soldier_Bandit_5_F";
+		typicalCargo[]=
+		{
+			"I_C_Soldier_Bandit_5_F"
+		};
+		textureList[]=
+		{
+			"Brown",
+			1,
+			"Olive",
+			1
+		};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Soft_F_Exp\Van_01\Data\Van_01_ext_brn_CO.paa",
+			"\A3\Soft_F_Gamma\Van_01\Data\Van_01_tank_CO.paa",
+			"\A3\Soft_F_Exp\Van_01\Data\Van_01_int_base_2_CO.paa"
+		};
+		hiddenSelectionsMaterials[]=
+		{
+			"\A3\Soft_F_Exp\Van_01\Data\Van_01_ext.rvmat",
+			"\A3\Soft_F_Gamma\Van_01\Data\Van_01_tank.rvmat",
+			"\A3\Soft_F_Gamma\Van_01\Data\Van_01_int_base.rvmat"
+		};
+	};
+};
+class cfgMods
+{
+	author="Night515";
+	timepacked="1527942538";
+};

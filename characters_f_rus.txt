@@ -1,0 +1,1 @@
+prefix=A3\characters_f_rus\

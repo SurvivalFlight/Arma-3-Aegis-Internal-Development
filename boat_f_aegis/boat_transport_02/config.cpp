@@ -1,0 +1,227 @@
+class CfgPatches
+{
+	class A3_Boat_F_Aegis_Boat_Transport_02
+	{
+		addonRootClass="A3_Boat_F_Aegis";
+		requiredAddons[]=
+		{
+			"A3_Boat_F_Exp_Boat_Transport_02"
+		};
+		requiredVersion=0.1;
+		units[]=
+		{
+			"B_A_Boat_Transport_02_F",
+			"B_Boat_Transport_02_F",
+			"B_G_Boat_Transport_02_F",
+			"B_T_Boat_Transport_02_F",
+			"I_Boat_Transport_02_F",
+			"I_G_Boat_Transport_02_F",
+			"O_Boat_Transport_02_F",
+			"O_G_Boat_Transport_02_F",
+			"O_T_Boat_Transport_02_F"
+		};
+		weapons[]={};
+	};
+};
+class CfgVehicles
+{
+	class Ship_F;
+	class Boat_F: Ship_F
+	{
+		class EventHandlers;
+	};
+	class Boat_Transport_02_base_F: Boat_F
+	{
+		class TextureSources
+		{
+			class Indep
+			{
+				displayName="$STR_A3_TEXTURESOURCES_INDEP0";
+				author="$STR_A3_Night515";
+				textures[]=
+				{
+					"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_exterior_INDP_CO.paa",
+					"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_interior_2_INDP_CO.paa"
+				};
+				factions[]=
+				{
+					"IND_F"
+				};
+			};
+			class Opfor
+			{
+				displayName="$STR_A3_TEXTURESOURCES_OPFOR0";
+				author="$STR_A3_Night515";
+				textures[]=
+				{
+					"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_exterior_OPFOR_CO.paa",
+					"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_interior_2_OPFOR_CO.paa"
+				};
+				factions[]=
+				{
+					"OPF_F",
+					"OPF_T_F"
+				};
+			};
+		};
+		textureList[]+=
+		{
+			"Indep",
+			0,
+			"Opfor",
+			0
+		};
+	};
+	class B_G_Boat_Transport_02_F: Boat_Transport_02_base_F
+	{
+		scope=2;
+		scopeCurator=2;
+	};
+	class O_G_Boat_Transport_02_F: Boat_Transport_02_base_F
+	{
+		scope=2;
+		scopeCurator=2;
+	};
+	class I_G_Boat_Transport_02_F: Boat_Transport_02_base_F
+	{
+		scope=2;
+		scopeCurator=2;
+	};
+	class B_Boat_Transport_02_F: Boat_Transport_02_base_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\B_Boat_Transport_02_F.jpg";
+		_generalMacro="B_Boat_Transport_02_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Aegis";
+		side=1;
+		faction="BLU_F";
+		crew="B_Soldier_F";
+		typicalCargo[]=
+		{
+			"B_Soldier_F",
+			"B_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Black",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_exterior_CO.paa",
+			"\A3\Boat_F_Exp\Boat_Transport_02\Data\Boat_Transport_02_interior_2_CO.paa"
+		};
+	};
+	class B_T_Boat_Transport_02_F: B_Boat_Transport_02_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\B_T_Boat_Transport_02_F.jpg";
+		_generalMacro="B_T_Boat_Transport_02_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Aegis";
+		side=1;
+		faction="BLU_T_F";
+		crew="B_T_Soldier_F";
+		typicalCargo[]=
+		{
+			"B_T_Soldier_F",
+			"B_T_Soldier_F"
+		};
+	};
+	class B_A_Boat_Transport_02_F: B_Boat_Transport_02_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\B_A_Boat_Transport_02_F.jpg";
+		_generalMacro="B_A_Boat_Transport_02_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Aegis";
+		side=1;
+		faction="BLU_A_F";
+		crew="B_A_Soldier_F";
+		typicalCargo[]=
+		{
+			"B_A_Soldier_F",
+			"B_A_Soldier_F"
+		};
+	};
+	class O_Boat_Transport_02_F: Boat_Transport_02_base_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\O_Boat_Transport_02_F.jpg";
+		_generalMacro="O_Boat_Transport_02_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Aegis";
+		side=0;
+		faction="OPF_F";
+		crew="O_Soldier_F";
+		typicalCargo[]=
+		{
+			"O_Soldier_F",
+			"O_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Opfor",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_exterior_OPFOR_CO.paa",
+			"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_interior_2_OPFOR_CO.paa"
+		};
+	};
+	class O_T_Boat_Transport_02_F: O_Boat_Transport_02_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\O_T_Boat_Transport_02_F.jpg";
+		_generalMacro="O_T_Boat_Transport_02_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Aegis";
+		side=0;
+		faction="OPF_T_F";
+		crew="O_T_Soldier_F";
+		typicalCargo[]=
+		{
+			"O_T_Soldier_F",
+			"O_T_Soldier_F"
+		};
+	};
+	class I_Boat_Transport_02_F: Boat_Transport_02_base_F
+	{
+		author="$STR_A3_Bohemia_Interactive";
+		editorPreview="\A3\EditorPreviews_F_Aegis\Data\CfgVehicles\I_Boat_Transport_02_F.jpg";
+		_generalMacro="I_Boat_Transport_02_F";
+		scope=2;
+		scopeCurator=2;
+		DLC="Aegis";
+		side=2;
+		faction="IND_F";
+		crew="I_Soldier_F";
+		typicalCargo[]=
+		{
+			"I_Soldier_F",
+			"I_Soldier_F"
+		};
+		textureList[]=
+		{
+			"Indep",
+			1
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_exterior_INDP_CO.paa",
+			"\A3\Boat_F_Aegis\Boat_Transport_02\Data\Boat_Transport_02_interior_2_INDP_CO.paa"
+		};
+	};
+};
+class cfgMods
+{
+	author="Night515";
+	timepacked="1525613803";
+};

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="RussiaUpdate">
+  <Package name="Language_Rus">
+    <Container name="Data_F">
+      <Container name="Faction_Classes">
+        <Key ID="str_a3_cfgfactionclasses_ind_ru_f0">
+          <Original>Russia</Original>
+          <Chinese>Russia</Chinese>
+          <French>Russia</French>
+          <Spanish>Russia</Spanish>
+          <Italian>Russia</Italian>
+          <Polish>Russia</Polish>
+          <Russian>Russia</Russian>
+          <German>Russia</German>
+          <Czech>Russia</Czech>
+          <English>Russia</English>
+          <Portuguese>Russia</Portuguese>
+          <Korean>Russia</Korean>
+          <Japanese>Russia</Japanese>
+        </Key>
+    </Container>
+    <Container name="Characters_F">
+      <Container name="Groups">
+        <Key ID="str_a3_cfggroups_indep_ind_ru_f0">
+          <Original>Russia</Original>
+          <Chinese>Russia</Chinese>
+          <French>Russia</French>
+          <Spanish>Russia</Spanish>
+          <Italian>Russia</Italian>
+          <Polish>Russia</Polish>
+          <Russian>Russia</Russian>
+          <German>Russia</German>
+          <Czech>Russia</Czech>
+          <English>Russia</English>
+          <Portuguese>Russia</Portuguese>
+          <Korean>Russia</Korean>
+          <Japanese>Russia</Japanese>
+        </Key>
+    </Container>
+  </Package>
+</Project>
